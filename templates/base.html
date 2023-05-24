@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ChadGPT</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+        integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+    <nav class="navbar">
+        <div class="app-header">
+            <a href=".//" class="logo-anchor">
+                <img src="../static/gpt-logo.png" class="logo"
+                    alt="GPT Logo" />
+                <span class="app-title">ChadGPT Chat Room</span>
+            </a>
+        </div>
+    </nav>
+    {% block content %} {% endblock %}
+</body>
+
+</html>
